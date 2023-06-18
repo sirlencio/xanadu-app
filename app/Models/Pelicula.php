@@ -28,7 +28,7 @@ class Pelicula extends Model
     public static function getFromApi()
     {
         $apiKey = env('TMDB_API_KEY');
-        $language = 'es_ES';
+        $language = 'es-ES';
         $url = "https://api.themoviedb.org/3/movie/popular?api_key=$apiKey&language=$language";
 
         $client = new \GuzzleHttp\Client();
