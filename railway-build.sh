@@ -1,13 +1,13 @@
 #!/bin/sh
-set -x 
+
 # Composer
-composer install --optimize-autoloader --verbose
+composer install --optimize-autoloader
 
 # NPM
-npm install --verbose
-npm run build --verbose
+npm install
+npm run build
 
 # Laravel
-php artisan migrate --force --verbose
-php artisan db:seed --force --verbose
+php artisan migrate --force
+php artisan db:seed --force
 php artisan storage:link
