@@ -30,6 +30,7 @@ class AdminController extends Controller
         $url = "https://api.themoviedb.org/3/movie/popular?api_key=$apiKey&language=$language&page=$page";
 
         $client = new \GuzzleHttp\Client();
+        
         $response = $client->get($url);
         $data = json_decode($response->getBody(), true);
 

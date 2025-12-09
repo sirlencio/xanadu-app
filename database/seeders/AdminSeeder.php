@@ -20,7 +20,7 @@ class AdminSeeder extends Seeder
             'nombre' => fake()->name(),
             'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
-            'password' => Hash::make('password'),
+            'password' => Hash::make(env('ADMIN_PWD')),
             'admin' => true,
             'ruta_foto_perfil'=> 'administrador.png',
             'remember_token' => Str::random(10),
