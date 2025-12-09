@@ -1,14 +1,15 @@
 REQUISITOS:
-PHP, COMPOSER, NPM
-
-BBDD:
-tabla llamada xanadu
+PHP 8.2
+COMPOSER
+NPM
 
 COMANDOS:
 composer install
 npm install
 php artisan migrate --seed
+
 npm run dev
+php artisan serve --host=0.0.0.0 --port=8000
 
 SI NO CARGAN FOTOS DE PERFIL:
 borrar carpeta storage dentro de la carpeta public
