@@ -2,6 +2,10 @@
 
 **XanaduApp** es una aplicación web desarrollada con **Laravel** y estilizada con **Tailwind CSS** que permite a los usuarios llevar un control de las películas y series que desean ver, han visto o han marcado como favoritas.
 
+## 🌐 Demo
+
+Puedes ver la aplicación en vivo aquí: [Xanadu](https://xanadu-production.up.railway.app/)
+
 ## 📌 Características principales
 
 - 📁 Gestión de películas y series (añadir, editar, eliminar)
